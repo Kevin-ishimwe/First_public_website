@@ -1,0 +1,383 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans+Narrow&family=Poppins:wght@200&family=Roboto:wght@100&family=Source+Sans+Pro:wght@200&display=swap');
+ *{
+  margin: 0;
+  padding: 0;
+ }
+ body {
+  margin: 0;
+  padding: 0%;
+  background-image: linear-gradient(90deg,rgba(146, 30, 30, 0.7),rgb(14, 14, 119,0.95)),url(file:///C:/Users/kev/Documents/original.jpg);
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  overflow-x: hidden;
+ }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#root{
+  margin-top: 0%;
+
+
+}
+
+
+.navdiv{
+  margin-top: 1%;
+  background-color: inherit;
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 30% 55% ;
+}
+.navhead{
+  color: whitesmoke;
+  float: left;
+  margin-left: 7%;
+  margin-top: 0%;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: 'PT Sans Narrow',sans-serif;
+  animation: navhead 2.5s linear 15;
+  
+  }
+  @keyframes navhead{
+    0%{
+      opacity: 0.2;
+     transform: translateX(0px);
+
+    }
+    50%{
+      opacity: 1;
+      transform: translateX(90px);
+
+    }
+    100%{
+      opacity: 0.2;
+      transform: translateX(0px);
+    }
+  }
+.ulnav{
+  display: grid;
+  grid-template-columns: 10% 10% 17% 15% 9% 10% 20%;
+  padding: 1%;
+  width: 100%;
+  margin-right: 2%;
+  margin-top: 0%;
+  justify-content: space-around;
+
+}
+.navli{
+  
+  display: inline;
+  padding:  0%;
+
+}
+a{
+  
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-family: 'PT Sans Narrow',sans-serif;
+} 
+.headtags:hover{
+  transition: 0.6s;
+  background-color: inherit;
+  padding-left: 15%;
+  border-bottom: solid white;
+  
+}
+
+.icons{
+  display: grid;
+  grid-template-columns: 40px 40px 40px 40px 40px;
+}
+i:hover{
+  color: white;
+}
+i{
+  color: red;
+  background-color: inherit;
+  
+}
+
+.head_main{
+  color: white;
+  display: grid;
+  justify-content: center;
+  margin-top: 6%;
+  font-family: sans-serif;
+  font-size: 200%;
+ font-weight: 500;
+  animation: slidein 2s ;
+
+}
+ 
+@keyframes slidein{
+  from{transform: translatex(900px);opacity: 0;}
+  to {transform: translatex(0px);opacity: 1;}
+}
+img{
+  width: 150px;
+  height: 150px;
+  border: 3px solid white;
+  border-radius: 50%;
+
+}
+#last_line{
+  color: white;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+p{
+  color: white;
+  display: grid;
+  justify-content: space-evenly;
+  font-family:  'Arial Narrow', sans-serif;
+  font-weight: 200;
+  font-size: large;
+  animation: slideleft 3s;
+
+}
+@keyframes slideleft{
+
+  from{transform: translateX(-900px);opacity: 0}
+  to{transform: translateX(0px);opacity: 1;}
+
+}
+.buttons_container{
+  display: grid;
+  grid-template-columns:  20% 20% ;
+  justify-content: center;
+  padding: 0%;
+  
+}
+button{
+  padding: 3%;
+  border-radius: 40px;
+  padding-left: 5%;
+  font-size: larger;
+  float: right;
+  color: white;
+  cursor: pointer;
+  margin: 7%;
+  animation: slideBottom 3s ;
+ 
+}
+@keyframes slideBottom{
+  0% {
+    transform: translateY(900px);
+    opacity: 0;
+  }
+ 
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.first_btn{
+  background-color: rgb(201, 56, 92);
+  border: solid;
+  border-color: rgb(201, 56, 92);
+ 
+}
+.first_btn:hover{
+  background-color: white;
+  color: rgb(201, 56, 92);
+}
+.second_btn{
+  background-color: inherit;
+  border-color: white;
+  border-style: solid;
+  animation: blink 3s infinite 3s, slideBottom 3s;
+
+}
+@keyframes blink {
+  0%{}
+  50%{ 
+    border: 2px solid rgb(201, 56, 92);}
+  100%{}
+}
+.second_btn:hover{
+  border-color: rgb(201, 56, 92);
+}
+.bars{
+  display: none;
+}
+.footer{
+  position:relative;
+  margin-top: 10%;
+  margin-bottom: 1%;
+  opacity: 0.7;
+}
+
+
+.h3footer{
+  color: white;
+  display: inline-block;
+  font-family: 'PT Sans Narrow',sans-serif;
+}
+.divul{
+  display: grid;
+grid-template-columns: 30% 30% 20% 15%;
+  justify-content: center;
+
+}
+.ulfooter{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.footli {
+  text-decoration: none;
+  text-decoration-style: none;
+  color: white;
+  font-family: 'PT Sans Narrow', sans-serif;
+  padding: 2%;
+  
+}
+@media only screen and (max-width: 700px ){
+
+  body{
+    margin-top: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    
+  }
+  .navhead{
+    animation: none;
+  }
+ 
+  .ulnav{
+    display: none;
+  }
+  .navdiv{
+    display: grid;
+    padding: 0.5%;
+    margin-top: -5%;
+    position: relative;
+    grid-template-columns: 0% 100% ;
+  
+    
+  }
+  .bars{ 
+  display: grid;
+  padding: 20%;
+  position: relative;
+  font-size: xx-large;
+  justify-content: left;
+  background-color: inherit;
+  border: none;
+  animation: none;
+  }
+  .btn-container{
+    position: fixed;
+    display: grid;
+    justify-content: right;
+    width: 91%;
+  }
+  .show_nav{
+    display: grid;
+    margin-top: 9%;
+    padding: 1%;
+    width: 100%;
+    justify-content :right;
+    animation: slideleft 0.8s ;
+    
+  }
+  @keyframes slideleft {
+    from{ transform: translateX(-700px);opacity: 0;}
+    to{transform: translateX(-10px); opacity: 0.5;}
+    
+  }
+  .navli{
+    width: 90%;
+    display: grid;
+    padding: 2%;
+    justify-content: right;
+  }
+  .headtags{
+    font-size: large;
+
+  }
+  
+  #nav_icons{
+  
+    padding: 1%;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  #btn_bars{
+    color: white;
+    position: relative;
+    font-size: xx-large;
+    animation: none;
+
+  }
+  
+  .head_main{
+    margin-top: 15%;
+    font-size: large;
+  }
+  p{
+    font-size: large;
+    margin: 10%;
+  }
+  .buttons_container{
+    display: flex;
+    position: relative;
+    padding: 0%;
+
+  
+  }
+  button{
+    padding: 1%;
+    border-radius: 40px;
+    padding-left: 5%;
+    font-size: medium;
+    float: right;
+    color: white;
+    cursor: pointer;
+    margin: 5%;
+    animation: slideBottom 3s ;
+    width: 110%;
+   
+  }
+  .h3footer{
+    color: white;
+    display: inline-block;
+    font-size: small;
+    margin-bottom: 5%;
+    font-family: 'PT Sans Narrow',sans-serif;
+  }
+  .divul{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 40% 40% 40% ;
+    justify-content: center;
+  
+  }
+  .ulfooter{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+  .footli {
+    text-decoration: none;
+    text-decoration-style: none;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 5%;
+    
+  }
+  
+  
+}
+
