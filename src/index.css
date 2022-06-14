@@ -30,7 +30,7 @@ code {
   width: 100%;
   display: grid;
   justify-content: space-between;
-  grid-template-columns: 30% 55% ;
+  grid-template-columns: 20% 60% ;
 }
 .navhead{
   color: whitesmoke;
@@ -51,7 +51,7 @@ code {
     }
     50%{
       opacity: 1;
-      transform: translateX(90px);
+      transform: translateX(50px);
 
     }
     100%{
@@ -60,19 +60,21 @@ code {
     }
   }
 .ulnav{
-  display: grid;
-  grid-template-columns: 10% 10% 17% 15% 9% 10% 20%;
+  display: flex;
+ flex-direction: row;
   padding: 1%;
-  width: 100%;
-  margin-right: 2%;
+  width: 99%;
+  min-width: 70%;
+  margin-right: 0%;
   margin-top: 0%;
-  justify-content: space-around;
+  justify-content: right;
+  overflow: hidden;
 
 }
 .navli{
   
-  display: inline;
-  padding:  0%;
+  display: flex;
+  padding-right:  5%;
 
 }
 a{
@@ -98,7 +100,7 @@ i:hover{
   color: white;
 }
 i{
-  color: red;
+  color: whitesmoke;
   background-color: inherit;
   
 }
@@ -106,9 +108,10 @@ i{
 .head_main{
   color: white;
   display: grid;
+    padding: 2%;
   justify-content: center;
-  margin-top: 6%;
-  font-family: sans-serif;
+  margin-top: 1%;
+  font-family:'PT Sans Narrow', sans-serif;
   font-size: 200%;
  font-weight: 500;
   animation: slidein 2s ;
@@ -120,8 +123,8 @@ i{
   to {transform: translatex(0px);opacity: 1;}
 }
 img{
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border: 3px solid white;
   border-radius: 50%;
 
@@ -164,7 +167,7 @@ button{
   color: white;
   cursor: pointer;
   margin: 7%;
-  animation: slideBottom 3s ;
+  animation: slideBottom 2s ;
  
 }
 @keyframes slideBottom{
@@ -191,9 +194,15 @@ button{
 .second_btn{
   background-color: inherit;
   border-color: white;
+  width: 90%;
   border-style: solid;
-  animation: blink 3s infinite 3s, slideBottom 3s;
+  animation: blink 3s infinite 3s, slideBottom 2.7s;
 
+}
+.a_btn{
+  background-color: inherit;
+  border-color: white;
+  padding-left: 0%;
 }
 @keyframes blink {
   0%{}
@@ -239,6 +248,10 @@ grid-template-columns: 30% 30% 20% 15%;
   padding: 2%;
   
 }
+.show_nav{
+  display: grid;
+  grid-template-columns: 15% 15% 20% 20% 30% ;
+}
 @media only screen and (max-width: 700px ){
 
   body{
@@ -281,8 +294,10 @@ grid-template-columns: 30% 30% 20% 15%;
     width: 91%;
   }
   .show_nav{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin-top: 9%;
+
     padding: 1%;
     width: 100%;
     justify-content :right;
@@ -306,9 +321,9 @@ grid-template-columns: 30% 30% 20% 15%;
   }
   
   #nav_icons{
-  
+    margin-top: 1%;
     padding: 1%;
-    justify-content: center;
+    justify-content: right;
     width: 100%;
   }
   
@@ -329,14 +344,17 @@ grid-template-columns: 30% 30% 20% 15%;
     margin: 10%;
   }
   .buttons_container{
-    display: flex;
-    position: relative;
+    display: grid;
+    grid-template-columns: 30% 30% ;
+    
+    justify-content: space-evenly;
     padding: 0%;
+    margin-bottom: 20%;
 
   
   }
   button{
-    padding: 1%;
+    padding: 5%;
     border-radius: 40px;
     padding-left: 5%;
     font-size: medium;
@@ -348,6 +366,12 @@ grid-template-columns: 30% 30% 20% 15%;
     width: 110%;
    
   }
+  .a_btn{
+    background-color: inherit;
+    border-color: white;
+    padding-left: 0%;
+  }
+  
   .h3footer{
     color: white;
     display: inline-block;

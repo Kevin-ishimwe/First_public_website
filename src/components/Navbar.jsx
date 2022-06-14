@@ -56,7 +56,7 @@ class Navbar extends Component {
               <i class="fab fa-instagram"></i>
             </a>
             <a href="#socials">
-              <i class="fab fa-android"></i>
+              <i class="fab fa-linkedin"></i>
             </a>
             <a href="#socials">
               <i class="fab fa-facebook"></i>

@@ -27,8 +27,9 @@ class Page extends Component {
         </p>
         <div className="buttons_container">
           <button className="first_btn">Learn More</button>
-
-          <button className="second_btn"> Let's Start</button>
+          <a href="/portfolio" className="a_btn">
+            <button className="second_btn"> Get Started</button>
+          </a>
         </div>
       </div>
     );

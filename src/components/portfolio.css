@@ -1,0 +1,12 @@
+.portfolio_page{
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -1%;
+    animation: slide_bottom 2s;
+}
+@keyframes slide_bottom {
+    from{ transform: translateY(1000px);}
+    to{ transform: translateY(0);}
+    
+}
