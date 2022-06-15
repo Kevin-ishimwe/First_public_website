@@ -1,18 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans+Narrow&family=Poppins:wght@200&family=Roboto:wght@100&family=Source+Sans+Pro:wght@200&display=swap');
- *{
-  margin: 0;
-  padding: 0;
- }
- body {
-  margin: 0;
-  padding: 0%;
-  background-image: linear-gradient(90deg,rgba(146, 30, 30, 0.7),rgb(14, 14, 119,0.95)),url(file:///C:/Users/kev/Documents/original.jpg);
-  width: 100%;
-  min-height: 100vh;
+ body{
+  margin: 0px;
+  padding: 0px;
+  background-image: linear-gradient(30deg,rgba(17, 117, 156, 0.726),rgba(167, 7, 95, 0.75)),url(file:///C:/Users/kev/Documents/original.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   overflow-x: hidden;
  }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -25,17 +21,19 @@ code {
 
 
 .navdiv{
-  margin-top: 1%;
+  margin-top: 0%;
   background-color: inherit;
+  position: fixed;
   width: 100%;
   display: grid;
+  background-color: rgba(1, 34, 43, 0.781);
   justify-content: space-between;
-  grid-template-columns: 20% 60% ;
+  grid-template-columns: 10% 70% ;
 }
 .navhead{
   color: whitesmoke;
   float: left;
-  margin-left: 7%;
+  margin-left: 5%;
   margin-top: 0%;
   font-size: xx-large;
   font-weight: bold;
@@ -61,12 +59,12 @@ code {
   }
 .ulnav{
   display: flex;
- flex-direction: row;
+  flex-direction: row;
+  right: 0%;
   padding: 1%;
-  width: 99%;
-  min-width: 70%;
+  width: 95%;
   margin-right: 0%;
-  margin-top: 0%;
+  margin-top: 0.5%;
   justify-content: right;
   overflow: hidden;
 
@@ -74,7 +72,7 @@ code {
 .navli{
   
   display: flex;
-  padding-right:  5%;
+  padding-right:  4%;
 
 }
 a{
@@ -97,7 +95,7 @@ a{
   grid-template-columns: 40px 40px 40px 40px 40px;
 }
 i:hover{
-  color: white;
+  color: rgb(206, 4, 14);
 }
 i{
   color: whitesmoke;
@@ -106,15 +104,16 @@ i{
 }
 
 .head_main{
+
   color: white;
   display: grid;
-    padding: 2%;
+  padding: 2%;
   justify-content: center;
-  margin-top: 1%;
+  margin-top: 3%;
   font-family:'PT Sans Narrow', sans-serif;
   font-size: 200%;
- font-weight: 500;
-  animation: slidein 2s ;
+ font-weight: 450;
+  animation: slidein 1.7s ;
 
 }
  
@@ -130,19 +129,24 @@ img{
 
 }
 #last_line{
+  margin-top: 2%;
   color: white;
   display: grid;
+  font-size: small;
+  font-style: italic;
   justify-content: center;
-  padding-bottom: 3%;
+  padding-bottom: 0%;
 }
 p{
+  margin-top: -4.5%;
+  padding: 1%;
   color: white;
   display: grid;
   justify-content: space-evenly;
-  font-family:  'Arial Narrow', sans-serif;
+  font-family:  'PT Sans Narrow', sans-serif;
   font-weight: 200;
-  font-size: large;
-  animation: slideleft 3s;
+  font-size: larger;
+  animation: slideleft 2.5s;
 
 }
 @keyframes slideleft{
@@ -152,6 +156,7 @@ p{
 
 }
 .buttons_container{
+  margin-top: 0%;
   display: grid;
   grid-template-columns:  20% 20% ;
   justify-content: center;
@@ -166,7 +171,7 @@ button{
   float: right;
   color: white;
   cursor: pointer;
-  margin: 7%;
+  margin-left: 7%;
   animation: slideBottom 2s ;
  
 }
@@ -220,7 +225,7 @@ button{
   position:relative;
   margin-top: 10%;
   margin-bottom: 1%;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 
@@ -231,21 +236,19 @@ button{
 }
 .divul{
   display: grid;
-grid-template-columns: 30% 30% 20% 15%;
-  justify-content: center;
+  grid-template-columns: 20% 20% 20% 15%;
+  justify-content: space-evenly;
 
 }
 .ulfooter{
   display: flex;
   flex-direction: column;
-  text-decoration: none;
 }
 .footli {
-  text-decoration: none;
-  text-decoration-style: none;
+  display: block;
   color: white;
   font-family: 'PT Sans Narrow', sans-serif;
-  padding: 2%;
+  padding: 1%;
   
 }
 .show_nav{
@@ -256,42 +259,47 @@ grid-template-columns: 30% 30% 20% 15%;
 
   body{
     margin-top: 5%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: top;
+    min-height: 100vh;
+    min-width: 50px;
+    overflow-y: scroll;
+
     
   }
   .navhead{
-    animation: none;
+    font-size: x-large;
+    margin-left: 2%;
+    justify-content: center;
+    animation: navhead 3.5s 3;
   }
  
   .ulnav{
     display: none;
   }
   .navdiv{
-    display: grid;
-    padding: 0.5%;
-    margin-top: -5%;
+    display: flex;
+    flex-direction: row;
     position: relative;
-    grid-template-columns: 0% 100% ;
+    background-color: inherit;
+    justify-content: space-between;
+    padding: 0.5%;
+    width: 97%;
+    margin-top: -4%;
   
     
   }
   .bars{ 
-  display: grid;
-  padding: 20%;
-  position: relative;
-  font-size: xx-large;
-  justify-content: left;
-  background-color: inherit;
+    display: inline-block;
+  font-size: x-large;
   border: none;
+  margin-right: 0%;
+  background-color: inherit;
   animation: none;
   }
   .btn-container{
-    position: fixed;
     display: grid;
+    position: absolute;
     justify-content: right;
-    width: 91%;
+    width: 90%;
   }
   .show_nav{
     display: flex;
@@ -336,17 +344,17 @@ grid-template-columns: 30% 30% 20% 15%;
   }
   
   .head_main{
-    margin-top: 15%;
-    font-size: large;
+    margin-top: 2%;
+    font-size: larger;
   }
   p{
     font-size: large;
-    margin: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .buttons_container{
     display: grid;
-    grid-template-columns: 30% 30% ;
-    
+    grid-template-columns: 45% 45% ;   
     justify-content: space-evenly;
     padding: 0%;
     margin-bottom: 20%;
@@ -356,14 +364,12 @@ grid-template-columns: 30% 30% 20% 15%;
   button{
     padding: 5%;
     border-radius: 40px;
-    padding-left: 5%;
     font-size: medium;
-    float: right;
     color: white;
     cursor: pointer;
     margin: 5%;
     animation: slideBottom 3s ;
-    width: 110%;
+    width: 100%;
    
   }
   .a_btn{
@@ -380,25 +386,27 @@ grid-template-columns: 30% 30% 20% 15%;
     font-family: 'PT Sans Narrow',sans-serif;
   }
   .divul{
-    position: relative;
-    margin-top: 10%;
-    margin-left: 20%;
-    display: grid;
-    grid-template-columns: 40% 40% 40% ;
-    justify-content: center;
+    position: absolute;
+    margin-top: 0%;
+    padding: 0%;
+    margin-left: 0%;
+    display: flex;
+    flex-wrap: wrap;
   
   }
   .ulfooter{
     display: flex;
+    margin: 0%;
+    justify-content: center;
     flex-direction: column;
-    text-decoration: none;
   }
   .footli {
     text-decoration: none;
     text-decoration-style: none;
     color: white;
     font-family: 'PT Sans Narrow', sans-serif;
-    padding: 5%;
+    font-size: small;
+    padding: 0%;
     
   }
   

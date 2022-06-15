@@ -2,13 +2,13 @@ import React, { Component } from "react";
 
 class Footer extends Component {
   state = {
-    ADRESS: ["KIGALI", "NYARUGENGE", "P.O Box 765"],
+    ADRESS: ["RWANDA", "KIGALI", "NYARUGENGE", "P.O Box 765"],
     pers: [
       "ISHIMWE KEVIN",
-      "MBA in CST/ETE",
-      ,
+      "MBA in ETE",
+      "E-mail:",
+      "ishimwekevin45@gmail.com",
       "tel:+250787882105",
-      "E-mail:ishimwekevin45@gmail.com",
     ],
     community: ["Support", "Help"],
   };

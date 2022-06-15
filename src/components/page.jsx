@@ -15,20 +15,24 @@ class Page extends Component {
             <img src={kelly} alt=" cant be displayed"></img>
           </center>
           <br></br>
-          <span id="last_line">beginner developer ISHIMWE KEVIN</span>
+          <center>jr.dev ISHIMWE Kevin</center>
         </h1>
 
-        <p>
-          get your moneys worth,hire me as your front end guy and you wont have
-          to worry about your website<br></br>
-          <span id="last_line">
-            for more information on click on any of the buttons below
-          </span>
-        </p>
+        <center>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius alias
+            temporibus beatae commodi fugit, nesciunt voluptas minima<br></br>
+            impedit quod adipisci? Rerum, perspiciatis earum error in accusamus
+            aspernatur quibusdam amet quas.
+            <span id="last_line">
+              for more information on click on any of the buttons below
+            </span>
+          </p>
+        </center>
         <div className="buttons_container">
-          <button className="first_btn">Learn More</button>
-          <a href="/portfolio" className="a_btn">
-            <button className="second_btn"> Get Started</button>
+          <button className="first_btn">MY SKILLS ^</button>
+          <a href="www.work.com" className="a_btn" target="_blank">
+            <button className="second_btn"> HIRE ME </button>
           </a>
         </div>
       </div>
