@@ -7,6 +7,23 @@ class Navbar extends Component {
     counter: 1,
     obJ: document.querySelector(".bars"),
     bars_rotate: "fas fa-bars",
+    scrolling: "false",
+    divnav: "navdiv",
+  };
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+  handleScroll = (event) => {
+    if (window.scrollY !== 0) {
+      this.setState({ divnav: "div_color" });
+      console.log("scrooled");
+    } else if (window.scrollY === 0) {
+      this.setState({ divnav: "navdiv" });
+    }
   };
 
   threeBars = () => {
@@ -22,8 +39,10 @@ class Navbar extends Component {
   };
   render() {
     return (
-      <div className="navdiv">
-        <h1 className="navhead">PORTFOLIO</h1>
+      <div className={this.state.divnav}>
+        <h1 className="navhead">
+          KVN <i className="fab fa-centercode"></i>
+        </h1>
         <ul className={this.state.bars}>
           <li className="navli">
             <a className="headtags" href="/">
@@ -41,7 +60,7 @@ class Navbar extends Component {
             </a>
           </li>
           <li className="navli">
-            <a className="headtags" href="id">
+            <a className="headtags" href="/">
               SERVICES
             </a>
           </li>

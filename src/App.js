@@ -1,10 +1,10 @@
 import React from "react";
-import Page from "./components/page";
 import Footer from "./components/footer";
 import Navbar from "./components/Navbar";
 import Login from "./components/login";
 import Portfolio from "./components/portfolio";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Page from "./components/page";
 
 function App() {
   return (

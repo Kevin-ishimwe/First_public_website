@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orbitron&family=PT+Sans+Narrow&family=Poppins:wght@200&family=Roboto:wght@100&family=Source+Sans+Pro:wght@200&display=swap');
+
+.port_pageout{
+    display: none;
+}
+.port_pagein{
+    display: grid;
+
+}
+
+.port_page{
+   
+    min-height: 100%;
+    height: 200vh;
+    background-color: rgb(4, 3, 2);
+    display: flex;
+    flex-direction: column;
+
+}
+.head_port{
+    font-family: 'Orbitron','Roboto', sans-serif ;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+    width: 100%;
+    color: white;
+    font-size: xx-large;
+}
+.main_port{
+    display: grid;
+    justify-content: space-around;
+   grid-template-columns: 60% 30%;
+   overflow: hidden;
+}
+.head_port2{
+    margin-top:1% ;
+    margin-bottom: 2%;
+    color: white;
+    font-family: 'Orbitron','Roboto',sans-serif ;
+    display: flex;
+    justify-content: left;
+    margin-left: 5.5%;
+}
+.para_port{
+    margin: 5%;
+    font-size: large;
+    color: white;
+}
+
+.para2_port{
+    margin: 5%;
+    font-size: large;
+    color: white;
+    font-family: 'Orbitron','Roboto' ;
+}
+
+
+.skil_container{
+    display: grid;
+    border: solid;
+
+    border-radius: 30px;
+    padding: 0%;
+    width: 100px;   
+}
+
+.port_cont{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30% 30% 30%;
+    
+}
+.logo_img{
+    margin-top: 1%;
+    background: none;
+    width: 100%;
+    height: 25vh;
+}
+.CircularProgressbar-path {
+    stroke: #da0420;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 3s ease 0s;
+  }
+.para_skils{
+    display: flex;
+    margin-top: 2%;
+    font-size: medium;
+    align-content: left;
+    font-family: 'Orbitron','Roboto' ;
+    color: white;
+    font-weight: bold;
+    animation: none;
+}
+.side_port{
+    padding: 5%;
+    border: 3px solid white;
+    border-radius: 40px;
+    margin: 0%;
+    height: 100%;
+    background-color: rgb(19, 75, 87);
+
+
+}       
+.li_port{
+    margin-top: 5%;
+    padding: 3%;
+    border: 3px solid black;
+    background: linear-gradient(30deg,rgba(228, 59, 3, 0.9),rgb(232, 162, 0.7));
+}
+.li_port:hover{
+    background: black;
+}
+@media only screen and (max-width: 700px ){
+    .port_page{
+        margin-top: 0%;
+        width: 104%;
+        height: 90vh;
+        overflow-y: scroll;
+        
+    }
+    .port_cont{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .skil_container{
+        display: grid;
+        flex-direction: row;
+        background-color: inherit;
+        border-radius: 0px;
+        padding: 0%;
+        border: none;
+        justify-content: right;
+        animation: none;
+    }
+    .head_port{
+        margin-top: 28%;
+
+    }
+    .head_port2{
+        justify-content: center;
+    }
+    .logo_img{
+        margin-top: 0%;
+        margin-left: 8%;
+        width: 9vh;
+        height: 8vh;
+    }
+    .main_port{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 92%;
+     
+    }
+    .para_skils{
+        margin-top: 0%;
+        font-size: x-small;
+        align-content: center;
+        font-family: 'Orbitron','Roboto' ;
+        color: rgb(255, 255, 255);
+        font-weight: normal;
+        animation: none;
+    }
+    .side_port{
+        display: none;
+        
+    }
+}

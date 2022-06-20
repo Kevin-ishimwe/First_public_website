@@ -3,7 +3,7 @@ class Login extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
+      <div className="landing">
         <div className="log_container">
           <h1 className="login_head">Member Login</h1>
           <div className="div_inputs">
@@ -28,7 +28,7 @@ class Login extends Component {
           <br></br>
           <br></br>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
