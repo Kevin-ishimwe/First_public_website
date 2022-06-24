@@ -5,22 +5,29 @@ import Login from "./components/login";
 import Portfolio from "./components/portfolio";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Page from "./components/page";
+import Services from "./components/services";
+const pageNotFound = () => {
+  <div>
+    <h1>THIS PAGE DOES NOT EXIST HERE</h1>
+  </div>;
+};
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <br></br>
-      <Router>
+    <Router>
+      <div>
+        <Navbar />
+        <br></br>
         <Routes>
           <Route path="/" element={<Page />} />
-          <Route path="/footer" element={<empty />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/Login" element={<Login />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          {/* <Route path="*" element={<Navigate replace to="/" />} /> */}
+          <Route path="/services" element={<Services />} />
         </Routes>
-      </Router>
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

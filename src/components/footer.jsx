@@ -2,20 +2,25 @@ import React, { Component } from "react";
 
 class Footer extends Component {
   state = {
-    ADRESS: ["RWANDA", "KIGALI", "NYARUGENGE", "P.O Box 765"],
-    pers: [
-      "ISHIMWE KEVIN",
-      "MBA in ETE",
-      "E-mail:",
-      "ishimwekevin45@gmail.com",
-      "tel:+250787882105",
-    ],
-    community: ["Support", "Help"],
+    ADRESS: ["Rwanda", "Kigali", "P.O Box 765"],
+    pers: ["E-mail:", "tel:+250787882105", "ishimwekevin45@gmail.com"],
+    community: ["Support", "Help", "associates"],
   };
   render() {
     return (
       <div className="footer">
-        <div className="divul">
+        <div className="headfoot">
+          <h3 className="h3footer">
+            join my personal news letter to receive updates
+          </h3>
+          <p className="para2_port">you can subscribe at any time</p>
+          <div className="subscribe">
+            <input type="text" className="input_foot"></input>
+            <button id="foot_btn">subscribe</button>
+          </div>
+        </div>
+
+        <div className="divulfoot">
           <ul className="ulfooter">
             <h3 className="h3footer">ADDRESS</h3>
             {this.state.ADRESS.map((over) => (
@@ -26,7 +31,6 @@ class Footer extends Component {
           </ul>
           <ul className="ulfooter">
             <h3 className="h3footer">PERSONAL INFO</h3>
-            <br></br>
             {this.state.pers.map((newli) => (
               <li className="footli" key={newli}>
                 {newli}
@@ -35,32 +39,11 @@ class Footer extends Component {
           </ul>
           <ul className="ulfooter">
             <h3 className="h3footer">COMMUNITY</h3>
-            <br></br>
             {this.state.community.map((comm) => (
               <li className="footli" key={comm}>
                 {comm}
               </li>
             ))}
-          </ul>
-          <ul className="ulfooter">
-            <h3 className="h3footer">FOLLOW US</h3>
-            <div className="icons">
-              <a href="#socials" className="a_footer">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#socials" className="a_footer">
-                <i class="fab fa-android"></i>
-              </a>
-              <a href="#socials" className="a_footer">
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a href="#socials" className="a_footer">
-                <i class="fa-brands fa-youtube"></i>
-              </a>
-              <a href="#socials" className="a_footer">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </div>
           </ul>
         </div>
       </div>

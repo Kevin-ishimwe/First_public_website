@@ -1,44 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans+Narrow&family=Poppins:wght@200&family=Roboto:wght@100&family=Source+Sans+Pro:wght@200&display=swap');
 
+.log_page{
+display: grid;
+justify-content: center;
+height: fit-content;
+}
 .login_head{
     display: flex;
     justify-content: center;
-    color: rgb(255, 255, 255);
+    color: rgb(230, 250, 250);
     font-size: xx-large;
     font-family: "PT Sans Narrow",sans-serif;
     border-bottom: double;
     margin-top: 3%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 
 .log_container{
     display: flex;
-    padding: 0%;
+    padding: 1%;
     flex-direction: column;
-    margin-top: 5%;
-    margin-left: 25%;
-    margin-right: 20%;
-    overflow-y: hidden;
-    border:5px solid white;
-    width: 40%;
-    height: 70vh;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border:5px solid azure;
+    width: 75vh;
+    height: fit-content;
     border-radius: 20px;
     animation: slide 1.5s 1;
+    box-shadow: 5px 5px 20px rgba(161, 169, 169, 0.5);
 
 }
 @keyframes slide{
     from{ transform: translateX(900px); opacity: 0;  }
     to{ transform: translateX(0px); opacity: 1;}
 }
+.icon-profile{
+
+    text-align: center;
+}
+#prof_icon{
+    font-size: 450%;
+
+}
 .div_inputs{
     display: flex;
     flex-direction: column;
     margin-left: 10%;
+    
 }
 .log_tags{
-    color: white;
-    margin-left: 10%;
-    text-align: center;
+    color: rgb(29, 81, 236);
+    margin-left: 1%;
+    border-bottom: 2px solid rgb(20, 20, 162);
+    background-color: rgba(218, 227, 227, 0.549);
+}
+.log_tag_forgot_password{
+        color: white;
+        margin: 2%;
+        display: block;
+        text-align: center;
+
 }
 input{
     margin-top: 1%;
@@ -70,12 +91,15 @@ input{
 
 
 .log_btn{
+    display: block;
     width: 80%;
     margin-left: 10%;
     margin-top: 5%;
+    color: azure;
     background-color: rgb(201, 56, 92);
     border-color: inherit;
     padding: 1%;
+    border-radius: 35px;
     font-size: larger;
     animation: none;
 }
@@ -85,23 +109,88 @@ background-color: whitesmoke;
 border: 2px solid rgb(175, 48, 48);
 }
 .log_tags:hover{
-    color: rgb(6, 5, 105);
+    color: rgb(3, 3, 56);
+
 }
 .h3_login{
-    padding: 5%;
-    text-align: center;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    
 }
+.login_option2{
+    display: none;
+}
+/* create account part
+Css with all changes */
+.create_account1{
+    display: none;
+}
+label{
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.terms{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#check_terms{
+    margin-top: 0%;
+    margin-right: 3%;
+    margin-bottom: 0%;
+    border-radius: 0px;
+    border: none;
+    font-weight: 20;
+    font-size: small;
+    font-family: sans-serif;
+    padding: 0px;
+    width: 5%;
+    margin-left: 0px;
 
+}
+.terms_tag{
+    display: block;
+    font-size: medium;
+    color: rgb(0, 0, 255);
+    border-bottom: 2px solid white;
+    background-color: rgba(135, 144, 153, 0.556);
+    width: fit-content;
+}
+.para_create{
+    margin:5% ;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-style: italic;
+   
+}
+.para_create1{
+    color: aliceblue;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+   
+}
+/* media query  */
 @media  (max-width: 900px) {
-    body{
-        max-height: 100%;
-        overflow-y: hidden;
-    }
-    .log_container{
-        margin-left: 10%;
-        margin-top: 25%;
-        width: 70%;
-        height: 50vh;
-        margin-right: 10%;
-    }
+    .log_page{
+        display: grid;
+        justify-content: space-around;
+        height: 100vh;
+
+        }
+        .log_container{
+            display: flex;
+            padding: 1%;
+            flex-direction: column;
+            margin-top: 20%;
+            margin-bottom: 0%;
+            border:3px solid azure;
+            width: 30vh;
+            height: fit-content;
+            border-radius: 20px;
+        }
+   
 }

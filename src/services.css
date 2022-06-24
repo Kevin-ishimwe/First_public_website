@@ -1,0 +1,124 @@
+.services_page{
+    border:3px  solid white;
+    margin-top: -15%;
+    background: rgba(5, 53, 67, 0.767);
+}
+.services_inner{
+    margin-top: 20%;
+    border-radius: 20px;
+    border: solid;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: white;
+}
+
+
+.services_head{
+    padding-top: 3%;
+    margin: 3%;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Orbitron',sans-serif;
+}
+.services_paragraph{
+    text-align: center;
+    margin-left: 7%;
+    margin-right: 8%;
+    font-size: larger;
+}
+#services_icons{
+    color: rgb(255, 255, 255);
+    font-size: 300%; 
+    margin: 3%;
+    margin-top: 6%;
+    
+}
+.services_cont{
+
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 40% 40%;
+}
+.services_para{
+    margin: 2%;
+    font-size: medium;
+    color: azure;
+}
+.service1{
+ margin: 2%;
+display: flex;
+  flex-direction: row-reverse;
+  transform: skew(-15deg);
+  background-color: rgb(28, 33, 128);
+  border: 5px double white;
+  border-radius: 10px;
+  
+    
+}
+.service2{
+    margin: 2%;
+    display: flex;
+    background-color: rgb(7, 64, 84);
+    transform: skew(-15deg);
+     border: 5px double white;
+      border-radius: 10px;
+}
+.service3{
+
+    margin: 2%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(196, 10, 57);
+    transform: skew(-15deg);
+      border: 5px double white;
+      border-radius: 10px;
+}
+.service4{
+
+    margin: 2%;
+    display: flex;
+    background-color: rgb(6, 136, 82);
+    transform: skew(-15deg);
+      border: 5px double white;
+      border-radius: 10px;
+}
+.service5{
+
+    margin: 2%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(169, 73, 38);
+    transform: skew(-15deg);
+      border: 5px double white;
+      border-radius: 10px;
+}
+.services_head2{
+    margin-top: 0%;
+    font-family: 'Orbitron',sans-serif;
+    font-size: large;
+}
+.services_info{
+    margin: 2%;
+    color: aliceblue;
+    text-align: center;
+}
+@media screen and (max-width:750px) {
+ 
+    .service1,.service2,.service3,.service4,.service5{
+        transform: skew(-2deg);
+    }
+    .services_paragraph{
+        margin: 0%;
+
+    }
+    .services_para{
+        margin: 0%;
+        margin-left: 2%;
+
+    }
+    .services_cont{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}

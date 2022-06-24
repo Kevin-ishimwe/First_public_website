@@ -4,6 +4,7 @@ import "./index.css";
 import "./login.css";
 import "./portfolio.css";
 import "./portfolio.css";
+import "./services.css";
 import App from "./App.js";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
