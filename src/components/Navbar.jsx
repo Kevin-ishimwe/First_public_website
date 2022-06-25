@@ -55,20 +55,20 @@ class Navbar extends Component {
               LOGIN
             </NavLink>
           </li>
-          <li className="navli">
+          {/* <li className="navli">
             <a className="headtags" href="/home">
               PROJECTS
             </a>
-          </li>
+          </li> */}
           <li className="navli">
             <NavLink to={"/services"} spy={true} smooth={true}>
               SERVICES
             </NavLink>
           </li>
           <li className="navli">
-            <a className="headtags" href="/footer">
+            <NavLink to={"/about"} spy={true} smooth={true}>
               ABOUT
-            </a>
+            </NavLink>
           </li>
         </ul>
         <div className="btn-container">
