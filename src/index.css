@@ -232,6 +232,15 @@ i:hover{
   to{transform: translateX(0px);opacity: 1;}
 
 }
+#rating_stars{
+  animation: opaque 3s 1;
+}
+@keyframes opaque {
+  0%{opacity: 0;}
+  60%{opacity: 0;}
+  100%{opacity: 1;}
+  
+}
 .buttons_container{
   margin-top: 3%;
   display: grid;

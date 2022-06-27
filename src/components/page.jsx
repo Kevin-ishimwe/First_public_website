@@ -4,10 +4,22 @@ import Portfolio from "./portfolio";
 import { useState } from "react";
 import { useEffect } from "react";
 import Services from "./services";
+import { Rating } from "react-simple-star-rating";
 
 function Page() {
   const [first, setfirst] = useState("ITS EASY");
-  /*custom made text box slider */
+  // for the star rating
+
+  const [rating, setRating] = useState(0); // initial rating value
+
+  // // Catch Rating value
+  const handleRating = (rate: number) => {
+    setRating(rate);
+    // other logic
+  };
+
+  // return
+
   useEffect(() => {
     const slides = ["ITS EASY", "ITS  CHEAP", "REACH OUT"];
 
@@ -63,6 +75,12 @@ function Page() {
                 for more information on click on any of the buttons below
               </span>
             </p>
+            <div className="App" id="rating_stars">
+              <Rating
+                onClick={handleRating}
+                ratingValue={rating} /* Available Props */
+              />
+            </div>
           </center>
           <div className="buttons_container">
             <button className="first_btn">
