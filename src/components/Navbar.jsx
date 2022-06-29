@@ -43,6 +43,16 @@ class Navbar extends Component {
           </li> */}
           <li className="navli">
             <NavLink
+              to={"/login"}
+              spy={true}
+              smooth={true}
+              onClick={this.threeBars}
+            >
+              LOGIN
+            </NavLink>
+          </li>
+          <li className="navli">
+            <NavLink
               to={"/services"}
               spy={true}
               smooth={true}
@@ -59,16 +69,6 @@ class Navbar extends Component {
               onClick={this.threeBars}
             >
               ABOUT
-            </NavLink>
-          </li>
-          <li className="navli">
-            <NavLink
-              to={"/login"}
-              spy={true}
-              smooth={true}
-              onClick={this.threeBars}
-            >
-              LOGIN
             </NavLink>
           </li>
         </ul>

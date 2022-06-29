@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans+Narrow&family=Poppins:wght@200&family=Roboto:wght@100&family=Source+Sans+Pro:wght@200&display=swap');
 
 .log_page{
+    margin-top: 0%;
 display: grid;
 justify-content: center;
 height: fit-content;
@@ -18,9 +19,9 @@ height: fit-content;
 
 .log_container{
     display: flex;
-    padding: 1%;
+    padding: 0%;
     flex-direction: column;
-    margin-top: 2%;
+    margin-top: 0%;
     margin-bottom: 5%;
     border:5px solid azure;
     width: 75vh;
@@ -174,8 +175,9 @@ label{
    
 }
 /* media query  */
-@media  (max-width: 900px) {
+@media  (max-width: 650px) {
     .log_page{
+        margin-top: 10%;
         display: grid;
         justify-content: space-around;
         height: 100vh;
@@ -185,10 +187,10 @@ label{
             display: flex;
             padding: 1%;
             flex-direction: column;
-            margin-top: 20%;
+            margin-top: 25%;
             margin-bottom: 0%;
             border:3px solid azure;
-            width: 30vh;
+            width: 290px;
             height: fit-content;
             border-radius: 20px;
         }

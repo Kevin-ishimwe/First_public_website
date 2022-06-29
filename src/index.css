@@ -402,13 +402,14 @@ height: fit-content;
 -phones
 -small tabloids 
 */
-@media only screen and (max-width: 700px ){
+@media only screen and (max-width: 650px ){
 
   .landing{
     margin: 0%;
     padding: 5%;
     background-position: center;
-    margin-top: -20.5%;
+    margin-top: -30.5%;
+    padding-top: 15%;
     width: 94%;
     height: fit-content;
     overflow-x: hidden;
@@ -429,7 +430,6 @@ height: fit-content;
   .navdiv{
     display: flex;
     flex-direction: row;
-    
     position: relative;
     justify-content: space-between;
     padding: 2%;
