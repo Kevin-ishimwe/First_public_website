@@ -11,21 +11,6 @@ class Navbar extends Component {
     scrolling: "false",
     divnav: "navdiv",
   };
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-  handleScroll = (event) => {
-    if (window.scrollY !== 0) {
-      this.setState({ divnav: "div_color" });
-      console.log("scrooled");
-    } else if (window.scrollY === 0) {
-      this.setState({ divnav: "navdiv" });
-    }
-  };
 
   threeBars = () => {
     if (this.state.counter % 2 !== 0) {
@@ -50,24 +35,40 @@ class Navbar extends Component {
               HOME
             </a>
           </li>
-          <li className="navli">
-            <NavLink to={"/login"} spy={true} smooth={true}>
-              LOGIN
-            </NavLink>
-          </li>
+
           {/* <li className="navli">
             <a className="headtags" href="/home">
               PROJECTS
             </a>
           </li> */}
           <li className="navli">
-            <NavLink to={"/services"} spy={true} smooth={true}>
+            <NavLink
+              to={"/services"}
+              spy={true}
+              smooth={true}
+              onClick={this.threeBars}
+            >
               SERVICES
             </NavLink>
           </li>
           <li className="navli">
-            <NavLink to={"/about"} spy={true} smooth={true}>
+            <NavLink
+              to={"/about"}
+              spy={true}
+              smooth={true}
+              onClick={this.threeBars}
+            >
               ABOUT
+            </NavLink>
+          </li>
+          <li className="navli">
+            <NavLink
+              to={"/login"}
+              spy={true}
+              smooth={true}
+              onClick={this.threeBars}
+            >
+              LOGIN
             </NavLink>
           </li>
         </ul>
