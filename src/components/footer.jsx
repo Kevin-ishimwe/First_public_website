@@ -45,6 +45,43 @@ class Footer extends Component {
               </li>
             ))}
           </ul>
+          <ul className="ulfooter">
+            <h3 className="h3footer">FOLLOW US</h3>
+            <div className="icons_footer">
+              <a
+                rel="noreferrer"
+                href="https://instagram.com"
+                target="_blank"
+                className="a_footer"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                rel="noreferrer"
+                href="https://www.facebook.com"
+                target="_blank"
+                className="a_footer"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                rel="noreferrer"
+                href="https://www.youtube.com "
+                target="_blank"
+                className="a_footer"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                rel="noreferrer"
+                href="https://twitter.com "
+                target="_blank"
+                className="a_footer"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </ul>
         </div>
       </div>
     );

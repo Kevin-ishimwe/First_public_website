@@ -8,6 +8,7 @@ import { Rating } from "react-simple-star-rating";
 
 function Page() {
   const [first, setfirst] = useState("ITS EASY");
+  const [counterSlide, setcounterSlide] = useState(1);
   // for the star rating
 
   const [rating, setRating] = useState(0); // initial rating value
@@ -19,17 +20,17 @@ function Page() {
   };
 
   // return
-
   useEffect(() => {
     const slides = ["ITS EASY", "ITS  CHEAP", "REACH OUT"];
 
-    setTimeout(() => {
-      setfirst(slides[1]);
+    setInterval(() => {
+      setfirst(slides[counterSlide]);
+      setcounterSlide(counterSlide + 1);
+      if (counterSlide >= 2) {
+        setcounterSlide(0);
+      }
     }, 5000);
-    setTimeout(() => {
-      setfirst(slides[2]);
-    }, 10000);
-  }, []);
+  });
 
   return (
     <React.Fragment>
@@ -85,7 +86,9 @@ function Page() {
           <div className="buttons_container">
             <button className="first_btn">
               <Link to="click" spy={true} smooth={true}>
-                <a className="a_btn">MY SKILLS</a>
+                <a className="a_btn" href="#click">
+                  MY SKILLS
+                </a>
               </Link>
             </button>
             <a href="www.work.com" className="a_btn" target="_blank">

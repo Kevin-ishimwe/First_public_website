@@ -81,7 +81,12 @@ function Portfolio() {
           <p className="para2_port">for more info?</p>
           <ul>
             <li className="li_port">
-              <a href="jfkfjnn" target="_blank" className="tag_port">
+              <a
+                href="https://www.kindacode.com"
+                rel="noreferrer"
+                target="_blank"
+                className="tag_port"
+              >
                 HTML5
               </a>
             </li>

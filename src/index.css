@@ -183,7 +183,7 @@ i:hover{
   font-family: 'Orbitron';
   color: azure;
   margin-bottom: 0%;
-  animation: slidetext 5s 4s 2;
+  animation: slidetext 5s 4s infinite;
   
  }
  @keyframes slidetext {
@@ -387,6 +387,18 @@ height: fit-content;
   display: flex;
   flex-direction: column;
 }
+.icons_footer{
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.a_footer{
+  margin-right: 3%;
+
+
+}
+
 .footli {
   display: block;
   color: white;
@@ -559,7 +571,7 @@ height: fit-content;
   }
   .divulfoot{
     display: grid;
-    grid-template-columns: 30% 40% 25%;
+    grid-template-columns: 20% 40% 25%;
     justify-content: space-evenly;
     padding: 4%;
     margin: 0%;
