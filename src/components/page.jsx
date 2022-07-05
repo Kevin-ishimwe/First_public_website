@@ -26,6 +26,7 @@ function Page() {
     setInterval(() => {
       setfirst(slides[counterSlide]);
       setcounterSlide(counterSlide + 1);
+      console.log(counterSlide);
       if (counterSlide >= 2) {
         setcounterSlide(0);
       }

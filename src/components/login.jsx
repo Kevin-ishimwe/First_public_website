@@ -4,6 +4,9 @@ import { useState } from "react";
 function Login() {
   const [divlogin, setdivlogin] = useState("login_option1");
   const [createpage, setcreatepage] = useState("create_account1");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [num_cred, setnum_cred] = useState(0);
   //helper functions
   let toCreatePage = () => {
     setdivlogin("login_option2");
@@ -13,6 +16,27 @@ function Login() {
     setdivlogin("login_option1");
     setcreatepage("create_account1");
   };
+  const emailHandler = (e) => {
+    e.preventDefault();
+    setEmail(e.target.value);
+  };
+  const passwordHandler = (e) => {
+    setPassword(e.target.value);
+  };
+  let users = [
+    {
+      email: email,
+      password: password,
+    },
+  ];
+
+  const storeCredentials = () => {
+    localStorage.setItem("users", JSON.stringify(users));
+    setnum_cred(num_cred + 1);
+  };
+  const pastCredentials = JSON.parse(localStorage.getItem("users"));
+  users.push(pastCredentials);
+
   return (
     <div className="landing">
       <div className="log_page" id="log_click">
@@ -57,11 +81,19 @@ after div change */}
             </div>
             <div className="div_inputs">
               <label>Enter Your email</label>
-              <input type="text" placeholder="example@gmail"></input>
+              <input
+                type="text"
+                placeholder="example@gmail"
+                onChange={emailHandler}
+              ></input>
               <label>Enter Username</label>
               <input type="text" placeholder="username"></input>
               <label> Enter Password</label>
-              <input type="password" placeholder="password"></input>
+              <input
+                type="password"
+                placeholder="password"
+                onChange={passwordHandler}
+              ></input>
               <label>Confirm Password</label>
               <input type="password" placeholder="Confim Password"></input>
             </div>
@@ -74,7 +106,11 @@ after div change */}
                 </a>
               </p>
             </div>
-            <button type="button" className="log_btn">
+            <button
+              type="submit"
+              className="log_btn"
+              onClick={storeCredentials}
+            >
               Sign up
             </button>
             <p className="para_create1">

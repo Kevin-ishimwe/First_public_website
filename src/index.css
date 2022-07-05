@@ -16,7 +16,7 @@ body{
   margin-top: -10%;
   margin-left: 0%;
   position: relative;
-  background: linear-gradient(90deg,rgba(0, 110, 110, 0.4),rgba(143, 5, 81, 0.5)),url(file:///C:/Users/kev/Documents/original.jpg) center center/cover no-repeat;
+  background:url(file:///C:/Users/kev/Documents/original.png) center center/cover no-repeat;
   width: 100%;
   height: fit-content;
   overflow: hidden;
